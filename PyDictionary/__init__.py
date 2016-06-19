@@ -90,7 +90,7 @@ class PyDictionary:
                   try:
                         link="http://wordnetweb.princeton.edu/perl/webwn?s={0}".format(term)
                         page=requests.get(link).text
-                        html=bs(page)
+                        html=bs(page, parser="html.parser")
                         types=html.findAll("h3")
                         length=len(types)
                         lists=html.findAll("ul")
@@ -110,7 +110,7 @@ class PyDictionary:
                   try:
                         link="http://www.google.co.in/search?q=define:%3A%20{0}".format(term)
                         page=requests.get(link).text
-                        html=bs(page)
+                        html=bs(page, parser="html.parser")
                         body=html.find("table",{"style":"font-size:14px;width:100%"})
                         wordType=body.find("div",{"style":"color:#666;padding:5px 0"}).getText()
                         meaning=body.find("li").getText()
