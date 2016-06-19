@@ -1,11 +1,11 @@
 ##PyDictionary
+geekprad's PyDictionary, updated so it doesn't give a parser warning  
+Installable through pip
 
 ###Installation
-
-Installation is simple through pip
-
-For pip
-
 ```
 pip install git+git://github.com/Frostlight/PyDictionary-Install.git
 ```
+
+###Source
+https://github.com/geekpradd/PyDictionary
