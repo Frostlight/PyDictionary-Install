@@ -9,7 +9,7 @@ if list(sys.version_info)[0] == 2:
     python2 = True
 
 __author__ = "Pradipta Bora"
-__version__ = "1.5.4"
+__version__ = "1.5.5"
 
 class PyDictionaryMod(object):
 
