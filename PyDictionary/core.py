@@ -50,14 +50,16 @@ class PyDictionary(object):
 
     def translate(self, term, language):
         if len(term.split()) > 1:
-            print("Error: A Term must be only a single word")
+            return None
+            #print("Error: A Term must be only a single word")
         else:
             try:
                 gs = goslate.Goslate()
                 word = gs.translate(term, language)
                 return word
             except:
-                print("Invalid Word")
+                return None
+                #print("Invalid Word")
 
     def getSynonyms(self, formatted=True):
         return [self.synonym(term, formatted) for term in self.args]
@@ -65,7 +67,8 @@ class PyDictionary(object):
     @staticmethod
     def synonym(term, formatted=False):
         if len(term.split()) > 1:
-            print("Error: A Term must be only a single word")
+        return None
+            #print("Error: A Term must be only a single word")
         else:
             try:
                 data = _get_soup_object("http://www.thesaurus.com/browse/{0}".format(term))
@@ -79,7 +82,8 @@ class PyDictionary(object):
                     return {term: li}
                 return li
             except:
-                print("{0} has no Synonyms in the API".format(term))
+                return None
+                #print("{0} has no Synonyms in the API".format(term))
 
     def __repr__(self):
         return "<PyDictionary Object with {0} words>".format(len(self.args))
@@ -96,7 +100,8 @@ class PyDictionary(object):
     @staticmethod
     def antonym(word, formatted=False):
         if len(word.split()) > 1:
-            print("Error: A Term must be only a single word")
+            return None
+            #print("Error: A Term must be only a single word")
         else:
             try:
                 data = _get_soup_object("http://www.thesaurus.com/browse/{0}".format(word))
@@ -110,12 +115,14 @@ class PyDictionary(object):
                     return {word: li}
                 return li
             except:
-                print("{0} has no Antonyms in the API".format(word))
+                return None
+                #print("{0} has no Antonyms in the API".format(word))
 
     @staticmethod
     def meaning(term, disable_errors=False):
         if len(term.split()) > 1:
-            print("Error: A Term must be only a single word")
+            return None
+            #print("Error: A Term must be only a single word")
         else:
             try:
                 html = _get_soup_object("http://wordnetweb.princeton.edu/perl/webwn?s={0}".format(
@@ -137,12 +144,14 @@ class PyDictionary(object):
                 return out
             except Exception as e:
                 if disable_errors == False:
-                    print("Error: The Following Error occured: %s" % e)
+                    return None
+                    #print("Error: The Following Error occured: %s" % e)
 
     @staticmethod
     def googlemeaning(term, formatted=True):
         if len(term.split()) > 1:
-            print("Error: A Term must be only a single word")
+            return None
+            #print("Error: A Term must be only a single word")
         else:
             try:
                 html = _get_soup_object("http://www.google.co.in/search?q=define:%3A%20{0}".format(
@@ -158,7 +167,8 @@ class PyDictionary(object):
                     return meaning
                 return formated
             except Exception as e:
-                print("Error: The Word given is not a valid English Word")
+                return None
+                #print("Error: The Word given is not a valid English Word")
 
 if __name__ == '__main__':
     d = PyDictionary('honest','happy')
