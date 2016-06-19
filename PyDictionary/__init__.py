@@ -1,6 +1,3 @@
-__author__ = "Pradipta Bora"
-__version__ = "1.5.1"
-
 from __future__ import print_function
 import sys, re, goslate
 try:
@@ -10,6 +7,9 @@ except:
 python2 = False
 if list(sys.version_info)[0] == 2:
     python2 = True
+
+__author__ = "Pradipta Bora"
+__version__ = "1.5.1"
 
 class PyDictionary(object):
 
