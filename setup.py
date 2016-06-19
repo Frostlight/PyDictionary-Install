@@ -11,7 +11,7 @@ setup(name='PyDictionaryMod',
       author="Pradipta Bora",
       author_email='pradd@outlook.com',
       license='MIT',
-      packages=['PyDictionary-Mod'],
+      packages=['PyDictionaryMod'],
       url="http://github.com/Frostlight/PyDictionaryMod",
       install_requires=[
             'beautifulsoup4','goslate','requests',],

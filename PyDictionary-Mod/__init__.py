@@ -81,7 +81,7 @@ class PyDictionaryMod(object):
             #print("{0} has no Synonyms in the API".format(term))
 
     def __repr__(self):
-        return "<PyDictionary Object with {0} words>".format(len(self.args))
+        return "<PyDictionaryMod Object with {0} words>".format(len(self.args))
 
     def __getitem__(self, index):
         return self.args[index]
