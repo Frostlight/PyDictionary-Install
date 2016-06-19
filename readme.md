@@ -5,7 +5,7 @@ Installable through pip
 
 ###Installation
 ```
-pip install git+git://github.com/Frostlight/PyDictionary-Mod.git
+pip install git+git://github.com/Frostlight/PyDictionaryMod.git
 ```
 
 ###Source
