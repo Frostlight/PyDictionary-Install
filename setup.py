@@ -4,15 +4,15 @@ try:
     description=pypandoc.convert('README.md','rst')
 except:
     description=''
-setup(name='PyDictionary',
-      version="1.5.1",
+setup(name='PyDictionaryMod',
+      version="1.5.3",
       description='Python Module to get meanings, translations, synonyms and antonyms of words',
       long_description=description,
       author="Pradipta Bora",
       author_email='pradd@outlook.com',
       license='MIT',
-      packages=['PyDictionary'],
-      url="http://github.com/geekpradd/PyDictionary",
+      packages=['PyDictionary-Mod'],
+      url="http://github.com/Frostlight/PyDictionaryMod",
       install_requires=[
             'beautifulsoup4','goslate','requests',],
       classifiers=[

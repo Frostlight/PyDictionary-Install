@@ -1,4 +1,4 @@
-##PyDictionary
+##PyDictionary-Mod
 geekprad's PyDictionary, updated so it doesn't give a parser warning  
 Errors are suppressed (no printing)  
 Installable through pip

@@ -1,9 +1,9 @@
 import unittest
 try:
-	from .__init__ import PyDictionary #Python 3
+	from .__init__ import PyDictionaryMod #Python 3
 except:
-	from __init__ import PyDictionary
-dictionary=PyDictionary()
+	from __init__ import PyDictionaryMod
+dictionary=PyDictionaryMod()
 
 class PyDictionaryTest(unittest.TestCase):
 	def testMeaning(self):

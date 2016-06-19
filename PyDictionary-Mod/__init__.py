@@ -11,7 +11,7 @@ if list(sys.version_info)[0] == 2:
 __author__ = "Pradipta Bora"
 __version__ = "1.5.3"
 
-class PyDictionary(object):
+class PyDictionaryMod(object):
 
     def __init__(self, *args):
         try:
@@ -154,7 +154,7 @@ class PyDictionary(object):
             #print("Error: The Word given is not a valid English Word")
 
 if __name__ == '__main__':
-    d = PyDictionary('honest','happy')
+    d = PyDictionaryMod('honest','happy')
     d.printSynonyms()
     print(
         "Hi there, fellow Geek. Good luck on checking the source out. It's both Python 2 and 3 compatible.\n\nPyDictionary is getting many updates and stay tuned for them. \nA Javascript Plugin and a Web API are coming")

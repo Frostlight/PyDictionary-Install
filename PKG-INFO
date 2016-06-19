@@ -1,12 +1,12 @@
 Metadata-Version: 1.1
-Name: PyDictionary
+Name: PyDictionary-Mod
 Version: 1.5.3
 Summary: Python Module to get meanings, translations, synonyms and antonyms of words
 Home-page: http://github.com/geekpradd/PyDictionary
 Author: Pradipta Bora
 Author-email: pradd@outlook.com
 License: MIT
-Description: PyDictionary: A "Real" Dictionary Module for Python
+Description: PyDictionary-Mod: A "Real" Dictionary Module for Python
         ---------------------------------------------------
         
         PyDictionary is a Dictionary Module for Python 2/3 to get meanings,
@@ -15,25 +15,9 @@ Description: PyDictionary: A "Real" Dictionary Module for Python
         synonyms and antonyms.
         
         This module uses Python Requests, BeautifulSoup4 and goslate as
-        dependencies
-        
-        Installation
-        ~~~~~~~~~~~~
-        
-        Installation is very simple through pip (or easy\_install)
-        
-        For pip
-        
-        ::
-        
-            pip install PyDictionary
-        
-        For Easy\_Install
-        
-        ::
-        
-            easy_install -U PyDictionary
-        
+        dependencies
+        
+		
         Usage
         ~~~~~
         
